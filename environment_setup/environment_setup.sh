@@ -31,7 +31,7 @@ if [ "$HOST_TYPE" = "Darwin" ]; then
     pip3 install networkX
     brew install nginx	
     brew install rsync
-    pip3 install sqlite3
+    brew install sqlite3
     
     if [ "$COURSE_TYPE" = "FULL_STACK_WEB" ]; then 
     	echo "Setting up development environment for Full Stack Web Development"
@@ -55,7 +55,7 @@ if [ "$HOST_TYPE" = "Darwin" ]; then
     	pip3 install seaborn
     	pip3 install bokeh
     	pip3 install spark
-    	pip3 install tensorflow
+    	brew install tensorflow
      fi
 
      echo "Setup Complete for $COURSETYPE for system $UNAMESTR "
@@ -79,7 +79,7 @@ elif [ "$HOST_TYPE" = "Linux" ]; then
     sudo easy_install3 pip
     sudo pip3 install virtualenv
     sudo pip3 install requests
-    sudo pip3 install sqlite3
+    sudo apt-get -y install sqlite3
 
     if [" $COURSE_TYPE " = "FULL_STACK_WEB" ]; then 
     	echo "Setting up development environment for Full Stack Web Development"
@@ -105,7 +105,7 @@ elif [ "$HOST_TYPE" = "Linux" ]; then
     	sudo pip3 install pymysql
     	sudo pip3 install sqlalchemy
     	sudo pip3 install spark
-    	sudo pip3 install tensorflow
+    	sudo apt-get install -y tensorflow
     	sudo pip3 install lxml
      fi
 
