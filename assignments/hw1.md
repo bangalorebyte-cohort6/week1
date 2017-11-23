@@ -6,15 +6,15 @@ Submit the following by ______.
 
 In your `README.md` answer the following questions with True or False. 
 
-1. `(5)==(5,)` returns True
-2. Any of the following: (integer, string, list) can be the key of a dictionary.
-3. Any of the following: (integer, string, list) can be the value of a dictionary.
-4. Any of the following: (integer, string, list) can be in a set.
-5. `s[0]="a"` would result in an error if s is a string.
-6. If `a = [(1,2),(3,4)]` performing `a[0]=3` would result in an error.
-7. If a key k is not in a dictionary d, then `d[k]` will return None.
-8. If `((x==y)!=(x is y))` is False, then x is an alias of y.
-9. If you were to open and read (so in \r" mode) a file that does not exist, Python will error out.
+1. `(5)==(5,)` returns True_____False
+2. Any of the following: (integer, string, list) can be the key of a dictionary.____False
+3. Any of the following: (integer, string, list) can be the value of a dictionary.____True
+4. Any of the following: (integer, string, list) can be in a set.____true
+5. `s[0]="a"` would result in an error if s is a string.____True
+6. If `a = [(1,2),(3,4)]` performing `a[0]=3` would result in an error.___False
+7. If a key k is not in a dictionary d, then `d[k]` will return None.___false
+8. If `((x==y)!=(x is y))` is False, then x is an alias of y.____True
+9. If you were to open and read (so in \r" mode) a file that does not exist, Python will error out.___True file does not exist
 
 ### Part 2
 
