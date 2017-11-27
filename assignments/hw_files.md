@@ -1,4 +1,4 @@
-#HW on File Operations
+# HW on File Operations
 
 1. Prompt for a number N and file F, and display the first N lines of F.
 
