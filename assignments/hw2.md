@@ -2,48 +2,17 @@
 
 Submit the following by January 21st, 2017 at 3:10pm. 
 
-### Part 1 
 
-In your `README.md` answer the following questions:
+### Part 1
 
-1. What are logical errors and how are they different from syntax errors?
-2. Is Python a compiled or scripting language? Explain the difference between the two. 
-3. What is the outcome of the following conditional statements if the value of variable x is 5?  Show your work.
-
-    a.  ``` x <= 4 or (x != 9  and x > 10) ```
-    
-    b.  ``` x > 0 and x < 10 and x != 6 ```
-    
-    c.  ``` x == 1 or x > 0 ```
-
-### Part 2
-
-The datetime module provides data and time objects and a rich set of methods and operators. Read the documentation [here](https://docs.python.org/2/library/datetime.html). Submit the following in a file named `date.py`.
+The datetime module provides data and time objects and a rich set of methods and operators. Read the documentation [here](https://docs.python.org/3/library/datetime.html). Submit the following in a file named `date.py`.
 
 1. Use the datetime module to write a program that gets the current date and prints the day of the week.
 2. Write a program that takes a birthday as input and prints the user’s age and the number of days, hours, minutes and seconds until their next birthday.
 3. For two people born on different days, there is a day when one is twice as old as the other. That’s their Double Day. Write a program that takes two birthdays and computes their Double Day.
 4. For a little more challenge, write the more general version that computes the day when one person is n times older than the other.
 
-### Part 3 
-
-Submit the following in a file named `prime.py`.
-
-1. A prime number is an integer greater than 1 that only has 1 and itself as factors. Write a program in Python than accepts an integer input from a user and then tells the user if the number is prime or not. Your program does not have to accept integers larger than 1 million.
-
-### Part 4 
-
-The [Fibonacci Sequence](http://en.wikipedia.org/wiki/Fibonacci_number) is a list of numbers where each is the sum of the previous two. 
-
-Take a look at the example below.
-
-```
-0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ... 
-```
-
-Write a function that takes in a number that frints Fibonacci Sequence up to, but not including, that number. Each number should be printed on a new line.
-
-### Part 5
+### Part 2
 
 Using the [Luhn Algorithm](http://en.wikipedia.org/wiki/Luhn_algorithm), also known as "modulus 10", we will be determining the validity of a given credit card number.
 
