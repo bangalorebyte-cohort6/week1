@@ -1,4 +1,4 @@
-## Homework Assignment 5
+## Python Miscellaneous Assignments
 
 Submit the following by Thursday, February 2nd, 2017 at 6:10pm. 
 
