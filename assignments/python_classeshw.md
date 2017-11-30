@@ -1,4 +1,4 @@
-## Homework Assignment 3
+## Python Classes
 
 Submit the following by Thursday, January 26th, 2017 at 6:10pm. 
 
