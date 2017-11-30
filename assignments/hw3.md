@@ -1,4 +1,4 @@
-## Homework Assignment 2
+## Homework Assignment 3
 
 Submit the following by January 21st, 2017 at 3:10pm. 
 
