@@ -34,8 +34,20 @@ Write a function `matrix_inverse(matrix_A)` that outputs the inverse matrix.
 
 ### Part 6
 
-Determine whether the following system of equations has no solution, infinite solutions or a unique solution without solving the system. Explain your answer in `README.txt`.
+Create a module called "matrix" and write a test script which will import the matrix module and perform matrix operations.
 
-``` python
-A = np.array([[1,2,-1,1,2],[3,-4,0,2,3],[0,2,1,0,4],[2,2,-3,2,0],[-2,6,-1,-1,-1]])
-```
+### Part 7
+
+Write a "wordtools" python module which would support the following functionality
+
+1. Remove white spaces in a string
+2. Return a dictionary of characters against its count present in the string
+3. Read the contents of the file, and returns the word count dictionary
+4. Check whether a string is palindrom or not
+5. Sort the word in an alphabetical order
+6. Search and replace a string with new string
+7. Convert all the characters in the string to lower case and return the lower case string
+8. Convert all the characters in the string to upper case and return the upper case string
+
+
+
