@@ -54,54 +54,61 @@ Explain what the following variables refer to, and their scope:
 7. `self.email`
 8. `person.email`
 
-### Part 2 
 
-Continuing in your `README.txt`, rewrite the following slices of code as list comprehensions:
+### Part 2
 
-``` python
-ans = []
-for i in range(3):
-    for j in range(4):
-        ans.append((i, j))
-print(ans)
+Using the [Luhn Algorithm](http://en.wikipedia.org/wiki/Luhn_algorithm), also known as "modulus 10", we will be determining the validity of a given credit card number.
+
+For now, you are just editing the included python file. You will find the skeleton of the `CreditCard` class inside. We want our class to have its three main properties set on [instantiation](http://en.wikipedia.org/wiki/Instance_(computer_science)) - card_number, card_type, and valid. Look at the code, you'll see this already there.
+
+If the card number given passes the Luhn algorithm, valid should be true and cardType should be set to 'VISA', 'AMEX', etc. If it does not pass, valid should be false and cardType should be set to "INVALID"
+
+This way, we can do this:
+```python
+    myCard = CreditCard('347650202246884')
+
+    myCard.valid ## true
+    myCard.card_type ## 'AMEX'
+    myCard.card_number ## '347650202246884'
 ```
 
-``` python
-ans = map(lambda x: x*x, filter(lambda x: x%2 == 0, range(5)))
-print(ans)
-```
+There are three instance methods. You may perform these methods in the order you see fit.
 
-### Part 3
+`determine_card_type` should check whether or not the credit card has valid starting numbers and return the card type.
 
-Suppose you're a hospital manager and are considering the use of a new method to diagnose a rare form of heart disease. You know that only 0.1% of the population suffers from that disease and that if a person has the disease, the test has a 99% of chance of turning out positive. If the person doesn’t have the disease, the test has a 98% chance of turning negative.
+Visa must start with 4  
+Mastercard must start with 51, 52, 53, 54 or 55  
+AMEX must start with 34 or 37  
+Discover must start with 6011  
 
-In `README.txt`, explain how feasible is this diagnostics method. That is, given that a test turned out positive, what are the chances of the person really having the disease? Please give a thorough explanation and steps as to how you completed this problem. 
+`check_length` should check whether or not a credit card number is a valid length.
 
-### Part 4
+Visa, MC and Discover have 16 digits  
+AMEX has 15  
 
-We're trying to find the best quarterback of the 2015 NFL season using passer rating and quarterback rating, two different measures of how the quarterback performs during a game. The numbers in the sets below are the different ratings for each of the 16 games of the season (A being passer rating, B being quarterback rating, the first element being the first game, the second element being the second, etc.) The better game the quarterback has, the higher each of the two measures will be; I’m expecting that they’re correlated and dependent on each other to some degree. You can assume that they’re normally distributed.
+`validate` should run the Luhn Algorithm and return true or false.
 
-``` python
-A = {122.8, 115.5, 102.5, 84.7, 154.2, 83.7, 122.1, 117.6, 98.1, 111.2, 80.3, 110.0, 117.6, 100.3, 107.8, 60.2}
-B = {82.6, 99.1, 74.6, 51.9, 62.3, 67.2, 82.4, 97.2, 68.9, 77.9, 81.5, 87.4, 92.4, 80.8, 74.7, 42.1}
-```
+The algorithm should works as follows: 
 
-Your job is to find out the probability that (91.9 <= A <= 158.3) and (56.4 <= B <= 100), the mean, and standard deviation. Lastly, is there any way that I can find out P(A|B) and P(B|A) given the data we have? 
+From the right most digit, double the value of every second digit. For example:
 
-Submit your code in a file named `nfl.py`. Make sure to thoroughly comment your code.
+`4 4 8 5 0 4 0 9 9 3 2 8 7 6 1 6`
 
-### Part 5
+becomes
 
-The following code should be written in a file called `part5.py`.
+`8 4 16 5 0 4 0 9 18 3 4 8 14 6 2 6`
 
-Consider a sequence of n Bernoulli trials with success probabilty p per trial. A string of consecutive successes is known as a success `run`. Write a function called `run_counts` that returns the counts for runs of length k for each k observed in a dictionary.
+Now, sum all the individual digits together. That is to say, split any numbers with two digits into their individual digits and add them. Like so:
 
-For example: if the trials were [0, 1, 0, 1, 1, 0, 0, 0, 0, 1], the function should return
+`8 + 4 + 1 + 6 + 5 + 0 + 4 + 0 + 9 + 1 + 8 + 3 + 4 + 8 + 1 + 4 + 6 + 2 + 6`
 
-``` python
-{1: 2, 2: 1})
-```
+Now take the sum of those numbers and modulo 10.
 
-Continuing on, what is the probability of observing at least one run of length 5 or more when n=100 and p=0.5?. Estimate this from 100,000 simulated experiments. Is this more, less or equally likely than finding runs of length 7 or more when p=0.7? Implement this as a function called `run_prob`. 
+80 % 10
+
+If the result is 0, the credit card number is valid.
+
+Keep your code super clean and [DRY](http://en.wikipedia.org/wiki/Don't_repeat_yourself). If you are repeating yourself, stop and think about how to better approach the problem. Keep your code encapsulated - imagine your CreditCard class is an interface other code will need to read. You want it as separate and unentangled as possible. Your class should not be dependent on any code outside of it - except, of course, code to instantiate it.
+
 
 
