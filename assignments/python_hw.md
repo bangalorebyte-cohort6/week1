@@ -1,4 +1,4 @@
-## Homework Assignment 5
+## Python Miscellaneous Assignments
 
 Submit the following by Thursday, February 2nd, 2017 at 6:10pm. 
 
@@ -37,4 +37,4 @@ In following questions, `d` is the registration record (represented by a diction
 
 (c) In the final week, several classes may have the same exam time. Write a function `notify_exam_conflict(d, course_codes)` that takes the registration record d and a list of course codes which share the same exam time slot, and returns a list of students who will have an exam time conflict.
 
-(d) You want to hold a Python workshop for everyone at Byte Academy, except to those who are taking Python 101 (they are awesome at Python programming already!) Write a function `hold_workshop(d)` that returns a list of students who are not enrolled in Python 101 right now. Note that Python 101 may not be offered every semester, so there is no guarantee that it is in the registration record. In case you don't know, the course code for Python 101 is "Python 101". 
+(d) You want to hold a Python workshop for everyone at Byte Academy, except to those who are taking Python 101 (they are awesome at Python programming already!) Write a function `hold_workshop(d)` that returns a list of students who are not enrolled in Python 101 right now. Note that Python 101 may not be offered every semester, so there is no guarantee that it is in the registration record. In case you don't know, the course code for Python 101 is "Python 101"

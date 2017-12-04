@@ -82,7 +82,7 @@ animal.speak("woof") # = "Butch says woof"
 
 ```
 
-###5.5 Class Methods
+### 5.5 Class Methods
 Class methods, like class attributes, are shared for all instances of the class. Thus, they cannot access any instance attributes or methods. They always take the `cls`, the calling class, as their first argument.
 
 ```python
