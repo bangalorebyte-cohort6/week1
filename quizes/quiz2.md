@@ -17,10 +17,10 @@ def main():
 
 main()
 
-a) A’s getInfo is called A’s getInfo is called
-b) A’s getInfo is called B’s getInfo is called
-c) B’s getInfo is called A’s getInfo is called
-d) B’s getInfo is called B’s getInfo is called
+    a) A’s getInfo is called A’s getInfo is called
+    b) A’s getInfo is called B’s getInfo is called
+    c) B’s getInfo is called A’s getInfo is called
+    d) B’s getInfo is called B’s getInfo is called
 
 2. What is the output of the below program?
 
