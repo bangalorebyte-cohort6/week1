@@ -12,7 +12,7 @@
 
 	D = lambda p:p*2                                                           
 	T = lambda p:p*3                                                         
-	Y = 2                                                                       X = D(Y)                                                                    
+	Y = 2                                                                         X = D(Y)                                                                    
 	Y = T(X)                                                                    X = D(Y)
 	print(X)
 
@@ -97,7 +97,7 @@
 16. What is the difference between expression and a statement in python?
 
 17. Explain what the following functions does in python?  
-	1. zip                                                                      2. sorted and sort - explain the difference   
+	1. zip                                                                     	   2. sorted and sort - explain the difference   
 
 18. Explain what the following functions does in python?
 	1. setattr and getattr                                                 
