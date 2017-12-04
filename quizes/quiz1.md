@@ -12,8 +12,8 @@
 
 	D = lambda p:p*2                                                           
 	T = lambda p:p*3                                                         
-	Y = 2                                                                         X = D(Y)                                                                    
-	Y = T(X)                                                                    X = D(Y)
+	Y = 2                                                                      	   X = D(Y)                                                                    
+	Y = T(X)                                                                    	    X = D(Y)
 	print(X)
 
 5. How many except statements can a try-except block have?
@@ -24,8 +24,7 @@
 	d) More than 0
 
 6. Is the following code valid?                                   
-	try:                                                                         
-		# Do something                                                    
+	try:                                                                        		# Do something                                                    
 	except:
 		# Do something
 	else:    
