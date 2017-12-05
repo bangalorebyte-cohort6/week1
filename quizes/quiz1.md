@@ -10,9 +10,9 @@
 
 4. What gets printed here?
 
-	D = lambda p:p*2                                                           
-	T = lambda p:p*3                                                         
-	Y = 2                                                                      	   X = D(Y)                                                                    
+	D = lambda p:p x 2                                                           
+	T = lambda p:p x 3                                                         
+	Y = 2                                                                      	   X = D(Y)  
 	Y = T(X)                                                                    	    X = D(Y)
 	print(X)
 
