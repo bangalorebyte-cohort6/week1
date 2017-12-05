@@ -1,0 +1,12 @@
+Answers to Quiz 2 - Python Classes
+
+1) a 
+2) a 
+3) d 
+4) b 
+5) e 
+6) c 
+7) b 
+8) b 
+9) c 
+10) b

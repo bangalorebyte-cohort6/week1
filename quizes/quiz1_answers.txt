@@ -1,0 +1,41 @@
+Quiz 1 - Answers to Python and Bash Basics
+
+1) (2,3,2,3)
+2) \nwoow
+3) 6
+4) 24
+5) d
+6) d
+7) a
+8) a
+9) b
+10) c
+11) a
+12) a
+13) a
+14) bash - A command line interface for Operationg System
+    .bashrc - Configuration file for bash program
+    .bash_profile - Profile based configuration file
+15) Environment Variables are - variables hold value that can affect the way programs or processes run
+eg: PATH, LD_LIBRARY_PATH
+
+16) Statement - a line of code that performs action
+    Expression - a line of code that evaluates to a value
+    Every expression can be statements.
+    Every statement need not be an expression.
+
+17)  zip - agregates elements from each iterator and return an iterator of tuples
+     sorted - returns a sorted iterator for a given iterator l = sorted(f)
+     sort - sorts the elements as a member function of the iterator. l.sort()
+
+18)  setattr - sets the attributes of objects given. Objects are of class type, attributes are class data, and values are new values to be set
+     eg: setattr(x,'value',123) is same as  x.value = 123
+     getattr - gets the attributes of objects given 
+     eg: getattr(x.value) is same as return(x.value)
+     slice - indexing a part of the sequence
+
+19) cat - displays the contents of the file to stdout
+    chmod - changes the permissions of the file to the new permissions
+
+20) man / info - manual of the commands given
+	chown - chanegs the ownership of the file to the new user name given
