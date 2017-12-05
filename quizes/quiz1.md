@@ -12,10 +12,12 @@
 
 	D = lambda p:p x 2                                                           
 	T = lambda p:p x 3                                                         
-	Y = 2                                                                      	   X = D(Y)  
-	Y = T(X)                                                                    	    X = D(Y)
+	Y = 2 
+	X = D(Y)
+	Y = T(X)
+	X = D(Y)
 	print(X)
-
+	
 5. How many except statements can a try-except block have?
 
 	a) 0
